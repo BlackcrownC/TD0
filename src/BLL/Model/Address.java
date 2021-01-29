@@ -1,5 +1,7 @@
 package BLL.Model;
 
+import java.util.Locale;
+
 public class Address {
     public int CivicNB;
     public String Street;
@@ -10,6 +12,6 @@ public class Address {
         CivicNB = civicNB;
         Street = street;
         City = city;
-        PostalCode = postalCode;
+        PostalCode = postalCode.toUpperCase(Locale.ROOT);
     }
 }
